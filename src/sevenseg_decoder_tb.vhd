@@ -83,7 +83,7 @@ test_process : process
         assert (segments = "0000000") report "Test Failed on input x8" severity error;
 
         sw_inputs <= x"9"; wait for 10 ns;
-        assert (segments = "0010000") report "Test Failed on input x9" severity error;
+        assert (segments = "0011000") report "Test Failed on input x9" severity error;
 
         sw_inputs <= x"A"; wait for 10 ns;
         assert (segments = "0001000") report "Test Failed on input xA" severity error;
